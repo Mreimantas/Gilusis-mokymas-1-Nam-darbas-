@@ -17,6 +17,14 @@
 > Colab ženkliukai: pakeiskite `USER/REPO` savo GitHub vardu ir saugyklos pavadinimu.
 > `https://colab.research.google.com/github/Mreimantas/Gilusis-mokymas-1-Nam-darbas-/blob/main/notebooks/02_gemini_steam_agent.ipynb`
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mreimantas/Gilusis-mokymas-1-Nam-darbas-/blob/main/notebooks/02_gemini_steam_agent.ipynb)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mreimantas/Gilusis-mokymas-1-Nam-darbas-/blob/main/notebooks/03_tabular_tf_tfdf.ipynb)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mreimantas/Gilusis-mokymas-1-Nam-darbas-/blob/main/notebooks/04_cnn.ipynb)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mreimantas/Gilusis-mokymas-1-Nam-darbas-/blob/main/notebooks/05_transfer_learning.ipynb)
+
 ## Architektūra (Mermaid)
 
 ### Panaudojimo atvejai
