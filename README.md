@@ -128,20 +128,6 @@ classDiagram
 
 PlantUML versijos: [`docs/plantuml/`](docs/plantuml) (atidaryti per https://www.plantuml.com/plantuml).
 
-## End-to-End pavyzdžiai (X → y)
-Kiekvienas pavyzdys turi įvestį `data/example_N_x.json` (žaidimo pavadinimas, kūrėjų aprašymas, apžvalgos) ir laukiamą išvestį `data/example_N_y.json` (struktūrizuota ataskaita). Pavyzdžiai sukurti rankiniu būdu su **fiktyviais žaidimais**, kad būtų aiški etalono „tiesa“. Realūs rezultatai iš Steam sugeneruojami notebook'e ir išsaugomi kaip `data/real_<app_id>_x/y.json`.
-
-| # | Žaidimas | Steam „recommended“ | Laukiamas bendras vertinimas | Kuo įdomus |
-|---|---|---|---|---|
-| 1 | Star Forge Tactics | 6/8 | mostly_positive | gerų aspektų ir silpnos istorijos derinys |
-| 2 | Dungeon Hollow | 4/8 | mixed | prieštaringos nuomonės (balansas, turinys, bug'ai) |
-| 3 | Turbo Drift Arena | 2/8 | mostly_negative | optimizavimas, mikrotransakcijos, tuščias multiplayer |
-
-### Kaip pademonstruoti GPT agentui
-1. Atidarykite [`prompts/test_prompt_1.md`](prompts/test_prompt_1.md) ir nukopijuokite bloką tarp `---`.
-2. Įklijuokite į ChatGPT (arba Custom GPT, kurio instrukcijoje yra [`prompts/system_prompt.md`](prompts/system_prompt.md)).
-3. Palyginkite atsakymą su `data/example_1_y.json`. Formuluotės gali skirtis, bet `overall_sentiment`, aspektų nuotaikos ir „gap“ mintis turi sutapti.
-
 ## Kaip paleisti
 1. Gaukite raktą https://aistudio.google.com/apikey → Colab `🔑 Secrets` → `GEMINI_API_KEY`.
 2. Atidarykite `notebooks/02_gemini_steam_agent.ipynb` Colab'e, pakeiskite `APP_ID` ir paleiskite visas ląsteles.
