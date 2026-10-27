@@ -3,7 +3,7 @@
 **Tema:** Sentimento analizė apie vaizdo žaidimus „Steam“ platformoje.
 **Idėja:** kūrėjų aprašymas parduoda svajonę, o Steam apžvalgos parodo realybę. Sistema skaito žaidėjų apžvalgas ir paaiškina, **koks žaidimas yra žaidėjų akimis**: bendrą nuotaiką, nuotaiką pagal aspektus (gameplay, graphics, performance, bugs, price, multiplayer...), žanrą žaidėjų žodžiais, privalumus ir trūkumus, kam žaidimas tinka ir kuo žaidėjų vaizdas skiriasi nuo kūrėjų aprašymo.
 
-**Komanda:** _[Vardas Pavardė]_, _[Vardas Pavardė]_ · **Dalykas / grupė:** _[...]_
+**Komanda:** _Eimantas Bimba_, _Mindaugas Moisiejus_ · **Dalykas / grupė:** _Gilusis Mokymas naudojant TensorFlow DIPf-24_
 
 | Dalis | Kur | Kas |
 |---|---|---|
