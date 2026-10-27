@@ -15,7 +15,7 @@
 | 1.5 | [`notebooks/05_transfer_learning.ipynb`](notebooks/05_transfer_learning.ipynb) | Transfer learning (MobileNetV2) |
 
 > Colab ženkliukai: pakeiskite `USER/REPO` savo GitHub vardu ir saugyklos pavadinimu.
-> `https://colab.research.google.com/github/USER/REPO/blob/main/notebooks/02_gemini_steam_agent.ipynb`
+> `https://colab.research.google.com/github/Mreimantas/Gilusis-mokymas-1-Nam-darbas-/blob/main/notebooks/02_gemini_steam_agent.ipynb`
 
 ## Architektūra (Mermaid)
 
