@@ -14,15 +14,16 @@
 | 1.4 | [`notebooks/04_cnn.ipynb`](notebooks/04_cnn.ipynb) | CNN: žanras iš viršelio |
 | 1.5 | [`notebooks/05_transfer_learning.ipynb`](notebooks/05_transfer_learning.ipynb) | Transfer learning (MobileNetV2) |
 
-> Colab ženkliukai: pakeiskite `USER/REPO` savo GitHub vardu ir saugyklos pavadinimu.
-> `https://colab.research.google.com/github/Mreimantas/Gilusis-mokymas-1-Nam-darbas-/blob/main/notebooks/02_gemini_steam_agent.ipynb`
-
+### 1.2.2
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mreimantas/Gilusis-mokymas-1-Nam-darbas-/blob/main/notebooks/02_gemini_steam_agent.ipynb)
 
+### 1.3
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mreimantas/Gilusis-mokymas-1-Nam-darbas-/blob/main/notebooks/03_tabular_tf_tfdf.ipynb)
 
+### 1.4
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mreimantas/Gilusis-mokymas-1-Nam-darbas-/blob/main/notebooks/04_cnn.ipynb)
 
+### 1.5
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mreimantas/Gilusis-mokymas-1-Nam-darbas-/blob/main/notebooks/05_transfer_learning.ipynb)
 
 ## Architektūra (Mermaid)
