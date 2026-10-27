@@ -1,0 +1,19 @@
+flowchart LR
+  U([Vartotojas])
+  S([Steam Web API])
+  G([Gemini API])
+  subgraph SteamSense
+    UC1(Įvesti Steam app_id)
+    UC2(Gauti žaidimo apžvalgas)
+    UC3(Klasifikuoti nuotaiką ir aspektus)
+    UC4(Sugeneruoti ataskaitą: žaidimas žaidėjų akimis)
+    UC5(Palyginti su kūrėjų aprašymu)
+    UC6(Vizualizuoti rezultatus)
+  end
+  U --> UC1 & UC4 & UC6
+  UC1 -. include .-> UC2
+  UC4 -. include .-> UC3
+  UC5 -. extend .-> UC4
+  UC2 --> S
+  UC3 --> G
+  UC4 --> G

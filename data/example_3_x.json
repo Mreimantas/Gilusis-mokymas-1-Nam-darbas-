@@ -1,0 +1,46 @@
+{
+  "app_name": "Turbo Drift Arena (fiktyvus pavyzdys)",
+  "developer_description": "The ultimate multiplayer racing experience with hundreds of cars.",
+  "reviews": [
+    {
+      "id": 1,
+      "voted_up": false,
+      "text": "Stuttering on RTX 3060, 40 fps at low settings. Unoptimized garbage."
+    },
+    {
+      "id": 2,
+      "voted_up": false,
+      "text": "Every car and track locked behind microtransactions. Pay-to-win in a racing game?"
+    },
+    {
+      "id": 3,
+      "voted_up": true,
+      "text": "Handling feels great with a wheel, drifting is satisfying. If they fix performance it will be a 9/10."
+    },
+    {
+      "id": 4,
+      "voted_up": false,
+      "text": "Servers are dead, long matchmaking, empty lobbies. Online mode is unplayable."
+    },
+    {
+      "id": 5,
+      "voted_up": false,
+      "text": "Looks like a mobile port. Menus are awful and controller support is broken."
+    },
+    {
+      "id": 6,
+      "voted_up": true,
+      "text": "Cool cars and nice graphics, fun for the price of a coffee on sale."
+    },
+    {
+      "id": 7,
+      "voted_up": false,
+      "text": "Crashes on startup after the latest patch. Devs abandoned it."
+    },
+    {
+      "id": 8,
+      "voted_up": false,
+      "text": "Refunded. Career mode is a grind designed to push you to the shop."
+    }
+  ]
+}

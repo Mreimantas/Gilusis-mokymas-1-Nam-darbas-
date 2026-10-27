@@ -1,0 +1,24 @@
+IMG_SIZE = (128, 256)   # viršeliai ~460x215, išlaikome santykį maždaug 1:2
+BATCH = 32; AUTOTUNE = tf.data.AUTOTUNE
+
+p_tr, p_tmp, y_tr, y_tmp = train_test_split(paths, labels, test_size=0.30, stratify=labels, random_state=SEED)
+p_va, p_te, y_va, y_te = train_test_split(p_tmp, y_tmp, test_size=0.50, stratify=y_tmp, random_state=SEED)
+print("train/val/test:", len(p_tr), len(p_va), len(p_te))
+
+def load(path, label):
+    img = tf.io.decode_image(tf.io.read_file(path), channels=3, expand_animations=False)
+    img = tf.image.resize(img, IMG_SIZE)
+    return img, label
+
+def make_ds(p, y, training=False):
+    ds = tf.data.Dataset.from_tensor_slices((p, y)).map(load, num_parallel_calls=AUTOTUNE).cache()
+    if training: ds = ds.shuffle(1000, seed=SEED)
+    return ds.batch(BATCH).prefetch(AUTOTUNE)
+
+train_ds, val_ds, test_ds = make_ds(p_tr, y_tr, True), make_ds(p_va, y_va), make_ds(p_te, y_te)
+
+imgs, labs = next(iter(train_ds))
+plt.figure(figsize=(12, 5))
+for i in range(8):
+    ax = plt.subplot(2, 4, i + 1); ax.imshow(imgs[i].numpy().astype("uint8")); ax.set_title(GENRES[int(labs[i])]); ax.axis("off")
+plt.tight_layout(); plt.show()

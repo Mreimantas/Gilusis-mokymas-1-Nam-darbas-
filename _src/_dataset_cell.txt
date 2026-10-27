@@ -1,0 +1,52 @@
+import os, time, random, requests, numpy as np, pandas as pd, matplotlib.pyplot as plt, seaborn as sns
+import tensorflow as tf
+from concurrent.futures import ThreadPoolExecutor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix, classification_report
+SEED = 42; random.seed(SEED); np.random.seed(SEED); tf.random.set_seed(SEED); sns.set_theme(style="whitegrid")
+
+GENRES = ["Racing", "Strategy", "Sports", "RPG"]   # <-- galima keisti (SteamSpy žanrai: Action, Adventure, Casual, Indie, RPG, Simulation, Strategy, Racing, Sports ...)
+PER_GENRE = 250
+ROOT = "/content/steam_genres"
+HEADER = "https://cdn.cloudflare.steamstatic.com/steam/apps/{}/header.jpg"
+
+def top_apps(genre, k):
+    j = requests.get("https://steamspy.com/api.php", params={"request": "genre", "genre": genre}, timeout=60).json()
+    apps = sorted(j.values(), key=lambda a: a["positive"] + a["negative"], reverse=True)   # populiariausi turi tvarkingus viršelius
+    return [(a["appid"], a["name"]) for a in apps[:k * 2]]
+
+def download(args):
+    appid, genre = args
+    out = f"{ROOT}/{genre}/{appid}.jpg"
+    if os.path.exists(out): return out
+    try:
+        r = requests.get(HEADER.format(appid), timeout=15)
+        if r.status_code == 200 and len(r.content) > 5000:
+            open(out, "wb").write(r.content); return out
+    except Exception:
+        pass
+    return None
+
+if not os.path.isdir(ROOT):
+    cand = {}
+    for g in GENRES:
+        cand[g] = top_apps(g, PER_GENRE); time.sleep(2)
+    # pašaliname žaidimus, priklausančius keliems pasirinktiems žanrams (kad klasės nesidubliuotų)
+    cnt = {}
+    for g, lst in cand.items():
+        for appid, _ in lst: cnt[appid] = cnt.get(appid, 0) + 1
+    jobs = []
+    for g, lst in cand.items():
+        os.makedirs(f"{ROOT}/{g}", exist_ok=True)
+        jobs += [(a, g) for a, _ in [x for x in lst if cnt[x[0]] == 1]]
+    with ThreadPoolExecutor(16) as ex: res = list(ex.map(download, jobs))
+    # išlyginame klases: palieka tiek vaizdų, kiek yra mažiausioje klasėje (iki PER_GENRE)
+    for g in GENRES:
+        files = sorted(os.listdir(f"{ROOT}/{g}"))
+        for f in files[PER_GENRE:]: os.remove(f"{ROOT}/{g}/{f}")
+
+paths, labels = [], []
+for i, g in enumerate(GENRES):
+    fs = sorted(os.listdir(f"{ROOT}/{g}")); paths += [f"{ROOT}/{g}/{f}" for f in fs]; labels += [i] * len(fs)
+paths, labels = np.array(paths), np.array(labels)
+print(pd.Series(labels).map(dict(enumerate(GENRES))).value_counts())

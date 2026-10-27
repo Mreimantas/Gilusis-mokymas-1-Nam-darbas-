@@ -1,0 +1,46 @@
+{
+  "app_name": "Dungeon Hollow (fiktyvus pavyzdys)",
+  "developer_description": "A thrilling dungeon crawler with endless replayability and a deep story.",
+  "reviews": [
+    {
+      "id": 1,
+      "voted_up": true,
+      "text": "Addictive roguelike loop. One more run turned into 5 hours. Controls are tight and responsive."
+    },
+    {
+      "id": 2,
+      "voted_up": false,
+      "text": "Pixel art is gorgeous but the balance is broken. Some weapons are useless and RNG decides every run."
+    },
+    {
+      "id": 3,
+      "voted_up": true,
+      "text": "Boss fights are hard but fair. Music slaps."
+    },
+    {
+      "id": 4,
+      "voted_up": false,
+      "text": "Game-breaking bug: save file corrupted after update 1.2. Devs not responding on forums."
+    },
+    {
+      "id": 5,
+      "voted_up": true,
+      "text": "Perfect for short sessions on Steam Deck. Plays great on handheld."
+    },
+    {
+      "id": 6,
+      "voted_up": false,
+      "text": "Only 3 biomes, content runs out after 15 hours. Not worth 20 euros yet."
+    },
+    {
+      "id": 7,
+      "voted_up": true,
+      "text": "Co-op mode is chaotic fun, even if it lags a bit with 4 players."
+    },
+    {
+      "id": 8,
+      "voted_up": false,
+      "text": "Unfair difficulty spikes, felt cheap not challenging."
+    }
+  ]
+}

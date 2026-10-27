@@ -1,0 +1,23 @@
+@startuml
+title SteamSense - duomenų modelis
+class Game { +app_id: int\n+name: str\n+developer_description: str }
+class Review { +id: int\n+text: str\n+voted_up: bool\n+votes_up: int\n+playtime_h: float }
+class ReviewLabel { +review_id: int\n+sentiment: positive|mixed|negative }
+class AspectSentiment { +aspect: str\n+sentiment: str\n+mentions: int\n+evidence: str }
+class GameReport {
+  +overall_sentiment: str
+  +sentiment_score: float [-1..1]
+  +what_players_say_it_is: str
+  +genre_tags_by_players: list
+  +pros: list
+  +cons: list
+  +recommended_for: list
+  +not_recommended_for: list
+  +gap_vs_developer_description: str
+}
+Game "1" -- "*" Review
+Review "1" -- "1" ReviewLabel
+ReviewLabel "1" -- "*" AspectSentiment
+Game "1" -- "1" GameReport
+GameReport "1" o-- "*" AspectSentiment
+@enduml

@@ -1,0 +1,23 @@
+flowchart TB
+  subgraph Sources[Duomenų šaltiniai]
+    SR[Steam Reviews API]
+    SD[Steam Store API appdetails]
+    KG[Kaggle Steam Reviews]
+  end
+  subgraph App[SteamSense]
+    ING[Duomenų surinkimas] --> PRE[Valymas ir paketavimas]
+    PRE --> AG[Gemini agentas: aspektai ir nuotaika]
+    AG --> AGG[Agregavimas pandas]
+    AGG --> SYN[Gemini sintezė: GameReport JSON]
+    SYN --> VIZ[Vizualizacija matplotlib]
+    ML[Klasikiniai ML: TF MLP, TF-DF]
+  end
+  GEM{{Gemini API}}
+  DATA[(data/ X,y)]
+  SR --> ING
+  SD --> ING
+  KG --> ML
+  AG <--> GEM
+  SYN <--> GEM
+  SYN --> DATA
+  ML -. baseline palyginimas .-> AG

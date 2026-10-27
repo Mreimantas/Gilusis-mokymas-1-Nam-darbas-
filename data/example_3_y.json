@@ -1,0 +1,90 @@
+{
+  "game": "Turbo Drift Arena",
+  "overall_sentiment": "mostly_negative",
+  "sentiment_score": -0.6,
+  "what_players_say_it_is": "A drift racing game with satisfying handling (especially on wheel) and attractive cars, but players describe a poorly optimized, mobile-style port with microtransaction-gated content, dead online lobbies, crashes and broken controller support.",
+  "genre_tags_by_players": [
+    "arcade racing",
+    "drifting",
+    "free-to-play-style monetization",
+    "mobile port"
+  ],
+  "aspects": [
+    {
+      "aspect": "gameplay",
+      "sentiment": "positive",
+      "mentions": 1,
+      "evidence": "satisfying drifting and handling with a wheel"
+    },
+    {
+      "aspect": "graphics",
+      "sentiment": "mixed",
+      "mentions": 2,
+      "evidence": "nice graphics vs 'looks like a mobile port'"
+    },
+    {
+      "aspect": "performance",
+      "sentiment": "negative",
+      "mentions": 1,
+      "evidence": "40 fps on RTX 3060 at low settings"
+    },
+    {
+      "aspect": "bugs",
+      "sentiment": "negative",
+      "mentions": 1,
+      "evidence": "crash on startup after latest patch"
+    },
+    {
+      "aspect": "monetization",
+      "sentiment": "negative",
+      "mentions": 2,
+      "evidence": "cars and tracks locked behind microtransactions, grindy career"
+    },
+    {
+      "aspect": "multiplayer",
+      "sentiment": "negative",
+      "mentions": 1,
+      "evidence": "empty lobbies, long matchmaking"
+    },
+    {
+      "aspect": "controls",
+      "sentiment": "negative",
+      "mentions": 1,
+      "evidence": "controller support broken"
+    },
+    {
+      "aspect": "developer_support",
+      "sentiment": "negative",
+      "mentions": 1,
+      "evidence": "devs abandoned it"
+    },
+    {
+      "aspect": "price_value",
+      "sentiment": "mixed",
+      "mentions": 2,
+      "evidence": "fun for a coffee price on sale vs pay-to-win"
+    }
+  ],
+  "pros": [
+    "satisfying drift handling",
+    "good-looking cars",
+    "cheap on sale"
+  ],
+  "cons": [
+    "poor optimization",
+    "microtransactions gate content",
+    "dead multiplayer",
+    "crashes",
+    "broken controller support",
+    "abandoned by developers"
+  ],
+  "recommended_for": [
+    "wheel owners willing to risk a purchase on deep sale"
+  ],
+  "not_recommended_for": [
+    "players who want online racing",
+    "controller players",
+    "anyone averse to microtransactions"
+  ],
+  "gap_vs_developer_description": "Developers promise 'ultimate multiplayer' and 'hundreds of cars'; players report empty multiplayer lobbies and most cars locked behind paywalls."
+}

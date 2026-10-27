@@ -1,0 +1,31 @@
+@startuml
+title SteamSense - komponentų diagrama
+package "Duomenų šaltiniai" {
+  [Steam Reviews API] as SR
+  [Steam Store API\n(appdetails)] as SD
+  [Kaggle: Steam Reviews] as KG
+}
+package "SteamSense" {
+  [Duomenų surinkimas] as ING
+  [Valymas ir paketavimas] as PRE
+  [Gemini agentas\n(aspektų ir nuotaikos žymėjimas)] as AG
+  [Agregavimas (pandas)] as AGG
+  [Gemini sintezė\n(GameReport JSON)] as SYN
+  [Vizualizacija (matplotlib)] as VIZ
+  [Klasikiniai ML modeliai\n(TF MLP, TF-DF)] as ML
+}
+cloud "Gemini API" as GEM
+database "data/ (X, y)" as DATA
+SR --> ING
+SD --> ING
+KG --> ML
+ING --> PRE
+PRE --> AG
+AG --> GEM
+AG --> AGG
+AGG --> SYN
+SYN --> GEM
+SYN --> VIZ
+SYN --> DATA
+ML ..> AG : palyginimas (baseline)
+@enduml

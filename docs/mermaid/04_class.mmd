@@ -1,0 +1,21 @@
+classDiagram
+  class Game { +int app_id +str name +str developer_description }
+  class Review { +int id +str text +bool voted_up +int votes_up +float playtime_h }
+  class ReviewLabel { +int review_id +str sentiment }
+  class AspectSentiment { +str aspect +str sentiment +int mentions +str evidence }
+  class GameReport {
+    +str overall_sentiment
+    +float sentiment_score
+    +str what_players_say_it_is
+    +list genre_tags_by_players
+    +list pros
+    +list cons
+    +list recommended_for
+    +list not_recommended_for
+    +str gap_vs_developer_description
+  }
+  Game "1" -- "*" Review
+  Review "1" -- "1" ReviewLabel
+  ReviewLabel "1" -- "*" AspectSentiment
+  Game "1" -- "1" GameReport
+  GameReport o-- AspectSentiment

@@ -1,0 +1,105 @@
+{
+  "game": "Star Forge Tactics",
+  "overall_sentiment": "mostly_positive",
+  "sentiment_score": 0.55,
+  "what_players_say_it_is": "A cerebral, puzzle-like sci-fi turn-based tactics game in the XCOM vein: smart AI, deep squad and ship customization and high replayability, but a steep learning curve, a weak story and some repetition after ~20 hours.",
+  "genre_tags_by_players": [
+    "turn-based tactics",
+    "XCOM-like",
+    "sci-fi",
+    "ship building",
+    "co-op skirmish"
+  ],
+  "aspects": [
+    {
+      "aspect": "gameplay",
+      "sentiment": "positive",
+      "mentions": 6,
+      "evidence": "puzzle-like missions, smart AI, new strategies after 60 hours"
+    },
+    {
+      "aspect": "difficulty",
+      "sentiment": "negative",
+      "mentions": 1,
+      "evidence": "tutorial explains nothing, action points confusing"
+    },
+    {
+      "aspect": "story",
+      "sentiment": "negative",
+      "mentions": 1,
+      "evidence": "forgettable story, wooden voice acting"
+    },
+    {
+      "aspect": "audio",
+      "sentiment": "mixed",
+      "mentions": 2,
+      "evidence": "amazing soundtrack vs wooden voice acting"
+    },
+    {
+      "aspect": "graphics",
+      "sentiment": "mixed",
+      "mentions": 1,
+      "evidence": "okay, nothing special"
+    },
+    {
+      "aspect": "performance",
+      "sentiment": "positive",
+      "mentions": 1,
+      "evidence": "smooth on an old laptop"
+    },
+    {
+      "aspect": "bugs",
+      "sentiment": "negative",
+      "mentions": 1,
+      "evidence": "campaign crashed twice on mission 7, patched quickly"
+    },
+    {
+      "aspect": "price_value",
+      "sentiment": "positive",
+      "mentions": 2,
+      "evidence": "worth it on sale, great value for 25 euros"
+    },
+    {
+      "aspect": "multiplayer",
+      "sentiment": "positive",
+      "mentions": 1,
+      "evidence": "co-op skirmish is a blast"
+    },
+    {
+      "aspect": "content",
+      "sentiment": "mixed",
+      "mentions": 2,
+      "evidence": "needs more maps; loop repetitive after 20 hours"
+    },
+    {
+      "aspect": "developer_support",
+      "sentiment": "positive",
+      "mentions": 1,
+      "evidence": "crash patched quickly"
+    }
+  ],
+  "pros": [
+    "deep tactical gameplay",
+    "smart AI opponents",
+    "good soundtrack",
+    "runs on weak hardware",
+    "fair price"
+  ],
+  "cons": [
+    "poor tutorial / steep learning curve",
+    "weak story and voice acting",
+    "repetitive after ~20 hours",
+    "few co-op maps",
+    "occasional crashes"
+  ],
+  "recommended_for": [
+    "XCOM and turn-based tactics fans",
+    "players who like optimizing builds",
+    "co-op strategy duos"
+  ],
+  "not_recommended_for": [
+    "players who want a story-driven campaign",
+    "people who dislike steep learning curves"
+  ],
+  "gap_vs_developer_description": "Developers promise 'epic interstellar warfare'; players describe a slow, thoughtful squad-tactics puzzle game, not a spectacle of fleet battles."
+}

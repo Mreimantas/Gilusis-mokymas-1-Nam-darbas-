@@ -1,0 +1,104 @@
+{
+  "game": "Dungeon Hollow",
+  "overall_sentiment": "mixed",
+  "sentiment_score": 0.0,
+  "what_players_say_it_is": "A fast, addictive pixel-art roguelike great for short sessions and Steam Deck, with tight controls and fair boss fights, undermined by poor balance and RNG, little content (3 biomes) and a save-corruption bug.",
+  "genre_tags_by_players": [
+    "roguelike",
+    "pixel art",
+    "co-op",
+    "Steam Deck friendly",
+    "short sessions"
+  ],
+  "aspects": [
+    {
+      "aspect": "gameplay",
+      "sentiment": "positive",
+      "mentions": 2,
+      "evidence": "addictive loop, tight controls"
+    },
+    {
+      "aspect": "controls",
+      "sentiment": "positive",
+      "mentions": 1,
+      "evidence": "tight and responsive"
+    },
+    {
+      "aspect": "graphics",
+      "sentiment": "positive",
+      "mentions": 1,
+      "evidence": "gorgeous pixel art"
+    },
+    {
+      "aspect": "audio",
+      "sentiment": "positive",
+      "mentions": 1,
+      "evidence": "music slaps"
+    },
+    {
+      "aspect": "difficulty",
+      "sentiment": "mixed",
+      "mentions": 3,
+      "evidence": "bosses hard but fair vs unfair spikes and RNG"
+    },
+    {
+      "aspect": "content",
+      "sentiment": "negative",
+      "mentions": 1,
+      "evidence": "only 3 biomes, runs out after 15 hours"
+    },
+    {
+      "aspect": "bugs",
+      "sentiment": "negative",
+      "mentions": 1,
+      "evidence": "save corrupted after update 1.2"
+    },
+    {
+      "aspect": "developer_support",
+      "sentiment": "negative",
+      "mentions": 1,
+      "evidence": "devs not responding on forums"
+    },
+    {
+      "aspect": "multiplayer",
+      "sentiment": "mixed",
+      "mentions": 1,
+      "evidence": "chaotic fun but lags with 4 players"
+    },
+    {
+      "aspect": "price_value",
+      "sentiment": "negative",
+      "mentions": 1,
+      "evidence": "not worth 20 euros yet"
+    },
+    {
+      "aspect": "performance",
+      "sentiment": "positive",
+      "mentions": 1,
+      "evidence": "plays great on Steam Deck"
+    }
+  ],
+  "pros": [
+    "addictive run loop",
+    "tight controls",
+    "pixel art and music",
+    "great on Steam Deck",
+    "co-op fun"
+  ],
+  "cons": [
+    "balance and RNG frustration",
+    "little content",
+    "save-corruption bug",
+    "unresponsive developers",
+    "lag in 4-player co-op"
+  ],
+  "recommended_for": [
+    "roguelike fans who play in short sessions",
+    "Steam Deck owners"
+  ],
+  "not_recommended_for": [
+    "players who want lots of content now",
+    "people sensitive to RNG-driven difficulty"
+  ],
+  "gap_vs_developer_description": "Developers advertise 'endless replayability and a deep story'; players mention neither a story nor endless content, only three biomes and ~15 hours before it runs dry."
+}

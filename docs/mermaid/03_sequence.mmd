@@ -1,0 +1,19 @@
+sequenceDiagram
+  actor V as Vartotojas
+  participant UI as Colab / UI
+  participant ST as Steam API
+  participant GM as Gemini API
+  V->>UI: app_id
+  UI->>ST: appdetails(app_id)
+  ST-->>UI: pavadinimas, kūrėjų aprašymas
+  UI->>ST: appreviews(app_id, cursor)
+  ST-->>UI: N apžvalgų + voted_up
+  UI->>UI: valymas, paketai po 25
+  loop kiekvienam paketui
+    UI->>GM: prompt + schema ReviewLabel[]
+    GM-->>UI: JSON nuotaika + aspektai
+  end
+  UI->>UI: agregavimas pandas
+  UI->>GM: statistika + top apžvalgos + kūrėjų aprašymas
+  GM-->>UI: GameReport JSON
+  UI->>V: ataskaita + grafikai

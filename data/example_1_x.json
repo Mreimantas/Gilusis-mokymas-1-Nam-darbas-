@@ -1,0 +1,46 @@
+{
+  "app_name": "Star Forge Tactics (fiktyvus pavyzdys)",
+  "developer_description": "Lead your fleet to glory in epic interstellar warfare.",
+  "reviews": [
+    {
+      "id": 1,
+      "voted_up": true,
+      "text": "Best turn-based tactics I've played in years. Every mission feels like a puzzle and the squad customization is deep. Soundtrack is amazing too."
+    },
+    {
+      "id": 2,
+      "voted_up": true,
+      "text": "Great gameplay but the campaign crashed twice on mission 7. Lost an hour of progress. Devs patched it quickly though."
+    },
+    {
+      "id": 3,
+      "voted_up": false,
+      "text": "Too hard and the tutorial explains nothing. Spent 2 hours just figuring out action points. Refunded."
+    },
+    {
+      "id": 4,
+      "voted_up": true,
+      "text": "Reminds me of XCOM but with better ship building. 60 hours in and still finding new strategies."
+    },
+    {
+      "id": 5,
+      "voted_up": true,
+      "text": "Graphics are okay, nothing special, but the AI opponents are smart and make you think. Worth the price on sale."
+    },
+    {
+      "id": 6,
+      "voted_up": false,
+      "text": "Story is forgettable and the voice acting is wooden. Gameplay loop gets repetitive after 20 hours."
+    },
+    {
+      "id": 7,
+      "voted_up": true,
+      "text": "Co-op skirmish with a friend is a blast. Wish there were more maps."
+    },
+    {
+      "id": 8,
+      "voted_up": true,
+      "text": "Runs smooth on my old laptop, no frame drops. Great value for 25 euros."
+    }
+  ]
+}
